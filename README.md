@@ -1,12 +1,12 @@
 # Named Entity Recognition (NER) Project
 
-This project aims to build a Named Entity Recognition (NER) model using a dataset from Kaggle, specifically the Groningen Meaning Bank (GMB). The dataset consists of thousands of sentences with words tagged for named entity recognition tasks. The model is trained to predict named entities in English text.
+This project aims to build a Named Entity Recognition (NER) model using the Groningen Meaning Bank (GMB) dataset from Kaggle. The dataset consists of thousands of sentences with words tagged for named entity recognition tasks. The model is trained to predict named entities in English text.
 
 ## Project Overview
 
 ### Dataset
 
-- **Source:** Kaggle
+- **Source:** [Kaggle](https://www.kaggle.com/datasets/abhinavwalia95/entity-annotated-corpus)
 - **Dataset Name:** Groningen Meaning Bank (GMB)
 - **Description:** Contains thousands of sentences with each word annotated for named entities. This dataset is commonly used for training NER models.
 
@@ -31,6 +31,17 @@ This project aims to build a Named Entity Recognition (NER) model using a datase
 5. **Evaluation**
    - Analyze model performance metrics including accuracy and loss on test data.
 
+6. **Deployment**
+   - Prepare the trained model for deployment, ensuring it is ready for real-world applications.
+
+7. **Inferencing**
+   - **Preprocess the Input Sentence:** Prepare sentences for the model by tokenizing and padding.
+   - **Load the Trained Model:** Load the saved model for inference.
+   - **Prediction:** Run the model on new sentences to predict named entities.
+   - **Post-process the Output:** Convert the model's output back into readable format with named entities highlighted.
+   - **Compare with spaCy Model:** Use the spaCy model to perform NER on the same input and display results side by side.
+   - **Display the Results:** Show a side-by-side comparison of the model's predictions with spaCy's predictions.
+
 ## Model Performance
 
 - **Training Accuracy:** Min: 0.964, Max: 0.992, Current: 0.992
@@ -50,6 +61,7 @@ This project aims to build a Named Entity Recognition (NER) model using a datase
 - NumPy
 - Pandas
 - Matplotlib
+- spaCy
 - Other necessary libraries (listed in `requirements.txt`)
 
 ### Installation
@@ -81,15 +93,18 @@ This project aims to build a Named Entity Recognition (NER) model using a datase
 
    Open the provided Jupyter notebook and follow the instructions to train and evaluate the model.
 
+3. **Perform Inferencing:**
+
+   Use the trained model to predict named entities on new text, and compare the results with those from the spaCy model.
+
 ### Results
 
-The model has achieved high accuracy and low loss on both validation and test datasets, demonstrating its effectiveness in identifying named entities in text.
+The model has achieved high accuracy and low loss on both validation and test datasets, demonstrating its effectiveness in identifying named entities in text. The side-by-side comparison with the spaCy model provides additional insights into the model's performance.
 
 ## Contributing
 
 Feel free to contribute to the project by submitting issues, pull requests, or suggestions for improvement.
 
-
 ## Acknowledgements
 
-- [Groningen Meaning Bank (GMB) dataset](https://www.kaggle.com/datasets/abhinavwalia95/entity-annotated-corpus)
+- [Groningen Meaning Bank (GMB) dataset](https://gmb.let.rug.nl/)
