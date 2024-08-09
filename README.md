@@ -57,7 +57,8 @@ This project aims to build a Named Entity Recognition (NER) model using a datase
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ner-project.git
+   git clone https://github.com/alim9hamed/Named_Entity_Recognition.git
+   git clone 
    cd ner-project
    ```
 
